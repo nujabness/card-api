@@ -14,10 +14,10 @@ public enum Rank {
     SEPT("8"),
     HUIT("9"),
     NEUF("10"),
-    J("11"),
-    Q("12"),
-    K("13"),
-    A("14");
+    J("J"),
+    Q("Q"),
+    K("K"),
+    A("A");
 
     private final String rank;
 
@@ -27,13 +27,7 @@ public enum Rank {
 
     @JsonValue
     public String getRank() {
-        return switch (rank) {
-            case "11" -> "J";
-            case "12" -> "Q";
-            case "13" -> "K";
-            case "14" -> "A";
-            default -> rank;
-        };
+        return rank;
     }
     private static final Random RAND = new Random();
 

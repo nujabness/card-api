@@ -7,15 +7,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Card implements Comparable<Card> {
+public class Card {
+
     private Color color;
     private Rank rank;
-
-    @Override
-    public int compareTo(Card card) {
-        if (getRank() == null || card.getRank() == null) {
-            return 0;
-        }
-        return getRank().compareTo(card.getRank());
-    }
 }
