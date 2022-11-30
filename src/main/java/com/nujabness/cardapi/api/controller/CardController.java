@@ -19,7 +19,7 @@ public class CardController {
     }
 
     @GetMapping("/deck")
-    public ResponseEntity<?> getDeck() {
+    public ResponseEntity<Deck> getDeck() {
         Deck deck = cardService.getDeck();
         return new ResponseEntity<>(deck, HttpStatus.OK);
     }
