@@ -1,4 +1,4 @@
-# BASIC API
+# Card API
 
 - Date : **11/2022**
 - Subject: *CARD API*
@@ -17,12 +17,12 @@
 
 ## Routes
 
-- Get User
-    - **Path:**: localhost:8080/
+- Get Deck
+    - **Path:**: localhost:8080/cards/deck
     - **Method:** GET
 
 - **Exemple Response :**
-  ```json
+```json
   {
     "shuffledCards": [
        {
@@ -63,6 +63,8 @@
       "..."
     ]
   }
- }
-  ```
+```
+- **Interface Vue3 : localhost:8080**
+
+
 ![alt text](https://github.com/nujabness/card-api/blob/main/ui.png)
